@@ -5,15 +5,15 @@
 # Can be useful to insert and remove # in front of code when you are writing and testing your code
 
 ### Tell R the directory where we are going to work. Very important and makes your life easier.
-setwd("/Users/MaddieDuhon/Dropbox/Econ172 GSI/Spring 2019 Miguel/Section 2 - Intro to R/")
+setwd("~/ECON172_Spring2019_R/Section_02/")
 
 ### To open a stata database, we will need the library haven.
 ## install.packages("haven") ## just have to do this once, to install
 library(haven)
-colonials <- read_stata("colonials.dta")
+colonials <- read_stata("/../../ECON172_Spring2019_SectionMaterial/Section_02_IntroToR/colonials.dta")
 
 ### Can also import .csv file directly
-colonials_alt <- read.csv("colonials.csv")
+colonials_alt <- read.csv("/../../ECON172_Spring2019_SectionMaterial/Section_02_IntroToR/colonials.csv")
 colonials_alt
 remove(colonials_alt)
 colonials_alt
@@ -72,7 +72,7 @@ dev.off()
 ###TABLES:
 
 ## This package is great for making tables in .html, .tex and many other formats.
-install.packages("stargazer")
+## install.packages("stargazer") ## only run once to install
 library(stargazer)
 
 #We could then run following code:
