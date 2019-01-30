@@ -10,14 +10,14 @@ setwd("~/ECON172_Spring2019_R/Section_02/")
 
 ## Now we want to open some data.
 library(haven) #this library allows you to load datasets in Stata format
-colonials <- read_stata("colonials.dta")
-#colonials <- read_stata("/../../ECON172_Spring2019_SectionMaterial/Section_02_IntroToR/colonials.dta")
+#colonials <- read_stata("colonials.dta")
+colonials <- read_stata("../../ECON172_Spring2019_SectionMaterial/Section_02_IntroToR/colonials.dta")
 
 ## Since we are not using Stata in this class, let's remove what we just 
 ## loaded from memory and instead import a .csv file with the same data.
 remove(colonials)
-colonials <- read.csv("colonials.csv")
-#colonials <- read.csv("/../../ECON172_Spring2019_SectionMaterial/Section_02_IntroToR/colonials.csv")
+#colonials <- read.csv("colonials.csv")
+colonials <- read.csv("../../ECON172_Spring2019_SectionMaterial/Section_02_IntroToR/colonials.csv")
 
 ## Let's take a look on the dataset.
 View(colonials) ## view dataframe directly
